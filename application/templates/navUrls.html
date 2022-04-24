@@ -1,0 +1,20 @@
+{% load static %}
+<nav class="w3-sidebar w3-theme-l5 w3-collapse" style="z-index:3;width:300px;" id="sidebar"><br>
+    <div class="w3-container">
+        <div onclick="closeBar()" class="w3-hide-large w3-right kel-hover" title="close menu">
+            <i class="fa fa-remove"></i>
+        </div>
+    </div>
+    <div>
+        <div class='w3-bar-block'>
+            <div onclick='window.open("/", "_self")' class='w3-bar-item w3-leftbar kel-hover {% if url == 'eda' %} w3-theme w3-border-black {% else %} w3-theme-l5 w3-border-white {% endif %}w3-hover-theme'>
+                Home
+            </div>
+            
+            <div onclick='window.open("/about", "_self")' class='w3-bar-item w3-leftbar kel-hover {% if url == 'about' %} w3-theme w3-border-black {% else %} w3-theme-l5 w3-border-white {% endif %}w3-hover-theme'>
+                About
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="closeBar()" style="cursor:pointer" id="overlay"></div>
