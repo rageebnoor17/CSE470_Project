@@ -45,7 +45,7 @@
                     <input type="text" class='w3-input w3-border w3-round' placeholder="Write the path here" id='path' name='path'>
                 </div>
                 <div class='w3-center'>
-                    <button class='w3-button w3-theme w3-round kel-hover' onclick='setPath()'> Set Path </button>
+                    <button id="SetPath" class='w3-button w3-theme w3-round kel-hover' onclick='setPath()'> Set Path </button>
                 </div>
                 <div class='w3-margin w3-border w3-round w3-padding' id='pathResponse'>
                     Once path is set. It will be shown here.
@@ -75,7 +75,7 @@
                             </select>
                         </div>
                         <div class='w3-bar-item'>
-                            <button class='w3-button kel-hover w3-theme w3-round' onclick='selectDependentVariable()'>
+                            <button id="SelectButton" class='w3-button kel-hover w3-theme w3-round' onclick='selectDependentVariable()'>
                                 <i class='fa fa-plus'></i> Select
                             </button>
                         </div>
